@@ -1,8 +1,8 @@
 <?php
 
-namespace Watson\Rememberable;
+namespace SyntaxEvolution\Rememberable;
 
-use Watson\Rememberable\Query\Builder;
+use SyntaxEvolution\Rememberable\Query\Builder;
 
 trait Rememberable
 {

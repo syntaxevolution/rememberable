@@ -1,12 +1,12 @@
 {
-    "name": "watson/rememberable",
+    "name": "syntaxevolution/rememberable",
     "description": "Query caching for Laravel",
     "keywords": ["laravel", "eloquent", "caching", "remember"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Dwight Watson",
-            "email": "dwight@studiousapp.com"
+            "name": "Topher Lazarz",
+            "email": "topher[at]syntaxevoltion{dot}com"
         }
     ],
     "require": {
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Watson\\Rememberable\\": "src/"
+            "SyntaxEvolution\\Rememberable\\": "src/"
         }
     }
 }

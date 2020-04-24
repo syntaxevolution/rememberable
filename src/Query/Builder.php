@@ -1,6 +1,6 @@
 <?php
 
-namespace Watson\Rememberable\Query;
+namespace SyntaxEvolution\Rememberable\Query;
 
 use DateTime;
 
