@@ -27,9 +27,10 @@ trait Rememberable
             $builder->cacheTags($this->rememberCacheTag);
         }
 
-        if (isset($this->rememberCachePrefix)) {
-            $builder->prefix($this->rememberCachePrefix);
-        }
+        //if (isset($this->rememberCachePrefix)) {
+            $tenant = app(\Hyn\Tenancy\Environment::class)->tenant();
+            $builder->prefix($tenant->id);
+        //}
 
         if (isset($this->rememberCacheDriver)) {
             $builder->cacheDriver($this->rememberCacheDriver);
