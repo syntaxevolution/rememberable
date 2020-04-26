@@ -29,8 +29,8 @@ trait Rememberable
 
         //if (isset($this->rememberCachePrefix)) {
         //ToDo: see if using server_hostname or whatever speeds this up
-            $tenant = $_SERVER['SERVER_NAME'];
-            $builder->prefix($tenant);
+            $tenant = app(\Hyn\Tenancy\Environment::class)->tenant();
+            $builder->prefix($tenant->id);
         //}
 
         if (isset($this->rememberCacheDriver)) {
