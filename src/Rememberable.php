@@ -29,8 +29,8 @@ trait Rememberable
 
         //if (isset($this->rememberCachePrefix)) {
         //ToDo: see if using server_hostname or whatever speeds this up
-            $tenant = app(\Hyn\Tenancy\Environment::class)->tenant() ? app(\Hyn\Tenancy\Environment::class)->tenant() : "default";
-            $builder->prefix($tenant->id);
+            $tenant = app(\Hyn\Tenancy\Environment::class)->tenant();
+            $builder->prefix($tenant->id ? $tenant->id : "default");
         //}
 
         if (isset($this->rememberCacheDriver)) {
