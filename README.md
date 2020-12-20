@@ -1,4 +1,4 @@
-Rememberable, Laravel 5 query cache
+Rememberable, Laravel 8 query cache
 ===================================
 
 [![Total Downloads](https://poser.pugx.org/watson/rememberable/downloads.svg)](https://packagist.org/packages/watson/rememberable)
@@ -23,7 +23,7 @@ It works by simply remembering the SQL query that was used and storing the resul
 Install using Composer, just as you would anything else.
 
 ```sh
-composer require watson/rememberable
+composer require syntaxevolution/rememberable
 ```
 
 The easiest way to get started with Eloquent is to create an abstract `App\Model` which you can extend your application models from. In this base model you can import the rememberable trait which will extend the same caching functionality to any queries you build off your model.
@@ -32,7 +32,7 @@ The easiest way to get started with Eloquent is to create an abstract `App\Model
 <?php
 namespace App;
 
-use Watson\Rememberable\Rememberable;
+use SyntaxEvolution\Rememberable\Rememberable;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
 abstract class Model extends Eloquent
